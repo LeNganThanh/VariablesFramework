@@ -1,29 +1,22 @@
 {
+  "name": "uib-framework-variables-lenganthanh",
   "version": "1.0.0",
-  "description": "Fran's stuff",
-  "main": "index.html",
-  "author": "Fran",
+  "description": "Create a mockup website as seen in the [reference image folder](./images_reference).",
+  "main": "index.js",
   "scripts": {
-    "start": "run-p watch watch:styles",
-    "build": "run-s clean clean:styles build:styles copy",
-    "deploy": "run-s build publish",
-    "build:styles": "sass src/scss:src/styles",
-    "watch": "live-server src",
-    "watch:styles": "sass src/scss:src/styles --watch",
-    "clean": "rm -rf dist",
-    "clean:styles": "rm -rf src/styles",
-    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
-    "publish": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FBW-E02/uib-framework-variables-LeNganThanh.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FBW-E02/uib-framework-variables-LeNganThanh/issues"
+  },
+  "homepage": "https://github.com/FBW-E02/uib-framework-variables-LeNganThanh#readme",
   "dependencies": {
     "bootstrap": "^5.1.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "live-server": "^1.2.1",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.43.4"
   }
 }

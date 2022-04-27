@@ -1,9 +1,13 @@
 // This is where you can import other stylesheets or write your scss code
-@import 'variables';
-@import 'typography';
-@import 'layout';
+$card-bg-color: #e0ddb2;
+$aside-bd-color: #dad6ab;
+$nav-footer-color: #016690;
 
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import "variables";
+@import "typography";
+@import "layout";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // // Custom.scss
 // // Option B: Include parts of Bootstrap
@@ -26,3 +30,63 @@
 // @import "../node_modules/bootstrap/scss/grid";
 
 // // 5. Add additional custom code here
+
+/*  nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+ */
+nav a {
+  color: $nav-footer-color;
+}
+.cards {
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: $card-bg-color;
+  border-radius: 10px;
+  padding: 1rem;
+  img {
+    width: 100%;
+  }
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  margin-bottom: 3rem;
+  h1 {
+    padding: 5rem;
+    margin: auto;
+    font-weight: bold;
+    width: 60%;
+  }
+}
+.d-flex {
+  margin: 1rem 0 1.5rem 1rem;
+  h3,
+  h2 {
+    font-weight: bold;
+  }
+  article {
+    margin: 0;
+    padding: 2rem 0 ;
+  }
+  aside {
+    border: 1px solid $aside-bd-color;
+    padding: 1rem 1.5rem;
+  }
+}
+footer {
+  background-color: $nav-footer-color;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    list-style-type: none;
+    margin: 1rem 0;
+  }
+  a {
+    text-decoration: none;
+    padding: 2rem;
+  }
+}
